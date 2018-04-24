@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "got": "^8.3.0",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.9",
     "moment-timezone": "^0.5.14",
     "p-whilst": "^1.0.0",
     "slugg": "^1.2.1"
