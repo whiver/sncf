@@ -10,3 +10,4 @@ yarn.lock
 shrinkwrap.yaml
 package-lock.json
 
+.idea
