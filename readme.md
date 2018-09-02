@@ -3,6 +3,7 @@
 JavaScript client for the [sncf](https://www.voyages-sncf.com/) API. Complies with the [friendly public transport format](https://github.com/public-transport/friendly-public-transport-format). Inofficial, using endpoints by *SNCF*. Ask them for permission before using this module in production. *Work in progress.*
 
 [![npm version](https://img.shields.io/npm/v/sncf.svg)](https://www.npmjs.com/package/sncf)
+[![Build Status](https://travis-ci.org/juliuste/sncf.svg?branch=master)](https://travis-ci.org/juliuste/sncf)
 [![Greenkeeper badge](https://badges.greenkeeper.io/juliuste/sncf.svg)](https://greenkeeper.io/)
 [![dependency status](https://img.shields.io/david/juliuste/sncf.svg)](https://david-dm.org/juliuste/sncf)
 [![license](https://img.shields.io/github/license/juliuste/sncf.svg?style=flat)](LICENSE)
@@ -81,26 +82,8 @@ Returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
         id: "3c9cb584-c16a-43ca-84fa-f89a610e9d82",
         legs: [
             {
-                origin: {
-                    type: "station",
-                    id: "DEFRS",
-                    name: "FRANKFURT MAIN SUED",
-                    regions: [
-                        "DEFRA"
-                    ],
-                    url: null,
-                    inFrance: false
-                },
-                destination: {
-                    type: "station",
-                    id: "CHAJP",
-                    name: "BALE CFF",
-                    regions: [
-                        "FRZDH"
-                    ],
-                    url: null,
-                    inFrance: true
-                },
+                origin: "DEFRS",
+                destination: "CHAJP",
                 departure: "2018-03-27T04:02:00+01:00",
                 arrival: "2018-03-27T07:20:00+01:00",
                 line: {
@@ -174,8 +157,6 @@ Returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
                 // …
             ]
         },
-        unsellableReason: null,
-        perturbations: false,
         isRealTime: false
     }
     // …
